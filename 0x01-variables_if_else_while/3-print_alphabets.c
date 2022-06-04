@@ -7,13 +7,16 @@
 int main(void)
 {
 	char alpha;
+	char bet;
 
 	for (alpha = 'a' ; alpha <= 'z' ; alpha++)
-
-		if (alpha != 'q' && alpha != 'e')
-		{
-			putchar(alpha);
-		}
+	{
+		putchar(alpha);
+	}
+	for (bet = 'A' ; bet <= 'Z' ; bet++)
+	{
+		putchar(bet);
+	}
 	putchar('\n');
 	return (0);
 }
