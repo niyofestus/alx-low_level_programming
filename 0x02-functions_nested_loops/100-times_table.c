@@ -1,66 +1,32 @@
-#include "stdio.h"
 
-int _putchar(char c);
+  
+#include "holberton.h"
 
 /**
- * print_times_table - print the times table until n
+ * print_sign - Prints the positive or negative sign of the argument, if any
  *
- * @n: n times table
+ * @c:          Argument to check against for signs, if any
  *
- * Return: No return
+ * Return:      (1) if @c is a positive number
+ *              (0) if @c is zero
+ *              (-1) if @c is a negative number
  */
 
-void print_times_table(int n)
+int print_sign(int c)
 {
-	int i;
-	int j;
-
-	if (n >= 0 && n <= 15)
+	if (c == 0)
 	{
-
-		for (i = 0; i <= n; i++)
-		{
-
-			for (j = 0; j <= n; j++)
-			{
-
-				if ((i * j) < 10)
-				{
-					if (j != 0)
-					{
-						_putchar(' ');
-						_putchar(' ');
-						_putchar(' ');
-					}
-					_putchar((j * i) + '0');
-				}
-
-				else if ((i * j) < 100)
-				{
-					_putchar(' ');
-					_putchar(' ');
-					_putchar((((j * i) / 10) % 10) + '0');
-					_putchar(((j * i) % 10) + '0');
-				}
-
-				else if ((i * j) < 1000)
-				{
-					_putchar(' ');
-					_putchar((((j * i) / 100) % 10) + '0');
-					_putchar((((j * i) / 10) % 10) + '0');
-					_putchar(((j * i) % 10) + '0');
-				}
-			if (j != (n))
-			{
-				_putchar(',');
-			}
-
-			}
-
-		_putchar('\n');
-
-		}
-
+		_putchar('0');
+		return (0);
 	}
-
+	else if (c > 0)
+	{
+		_putchar('+');
+		return (1);
+	}
+	else
+	{
+		_putchar('-');
+		return (1);
+	}
 }
