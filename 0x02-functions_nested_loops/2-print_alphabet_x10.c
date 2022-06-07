@@ -13,10 +13,10 @@ while (b < 10)
 char a = 'a';
 while (a <= 'z')
 {
-_putchar(a);
+putchar(a);
 a++;
 }
-_putchar('\n');
+putchar('\n');
 b++;
 }
 }
