@@ -1,19 +1,13 @@
-#include <limits.h>
-#include "main.h"
-
-/**
- * main - check the code for Holberton School students.
- *
- * Return: Always 0.
- */
+#include "stdio.h"
 int main(void)
 {
 	int r;
 
-	r = print_sign(98);
-	if (r < 0)
-		r *= -1;
-	putchar(r + '0');
+	print_last_digit(98);
+	print_sign(98);
+	print_last_digit(0);
+	r = print_last_digit(-1024);
+	putchar('0' + r);
 	putchar('\n');
 	return (0);
 }
