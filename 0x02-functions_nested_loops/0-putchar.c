@@ -1,21 +1,17 @@
 #include "holberton.h"
-
 /**
- * print_alphabet - check the code for Holberton School students.
- *
- * Return: Always 0.
+ * main - prints the string "Holberton" from a character array.
+ * Return: 0 on success.
  */
-
-void print_alphabet(void)
+int main(void)
 {
-	char alp = 'a';
+	char c[] = "Holberton";
+	int i;
 
-	while (alp <= 'z')
+	for (i = 0; i < 9; i++)
 	{
-		_putchar (alp);
-		alp++;
-
+		_putchar(c[i]);
 	}
-	_putchar ('\n');
-
+	_putchar('\n');
+	return (0);
 }
