@@ -1,7 +1,7 @@
 #include "stdio.h"
 
 /**
- * print_alphabet_x1 - func
+ * print_alphabet_x10 - func
  *
  * Return - 0
  */
