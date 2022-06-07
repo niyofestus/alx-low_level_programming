@@ -1,9 +1,4 @@
 #include "stdio.h"
-/**
- * main - Prints Holberton
- *
- * Return: Always 0 (Success)
- */
 int main(void)
 {
 	putchar('_');
