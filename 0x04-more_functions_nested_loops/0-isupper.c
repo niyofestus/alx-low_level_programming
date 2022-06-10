@@ -1,4 +1,4 @@
-#include "stdio.h"
+#include "holberton.h"
 
 /**
  * _isupper - check for upper case letter
