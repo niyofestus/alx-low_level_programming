@@ -1,3 +1,8 @@
+#ifndef MAIN_H
+#define MAIN_H
+
+#include <stdio.h>
+
 #ifndef FILE_HOLBERTON
 #define FILE_HOLBERTON
 
