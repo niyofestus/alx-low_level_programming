@@ -1,65 +1,21 @@
 #include "main.h"
 
 /**
- * infinite_add - add 2 integers.
- * @n1: integer
- * @n2: integer
- * @r: buffer
- * size_r: size of r
- * Return: char
+ * infinite_add - add two string numbers
+ * @n1: string number to add to n2
+ * @n2: string number to add to n1
+ * @r: buffer to store the sum
+ * @size_r: size of buffer
+ * return: pointer to sum or 0 if it does not fit in r
  */
-
-int _atoi(char *s)
-{
-	int sign = 1, resp = 0, firstNum;
-
-	for (firstNum = 0; !(s[firstNum] >= 48 && s[firstNum] <= 57); firstNum++)
-	{
-		if (s[firstNum] == '-')
-		{
-			sign *= -1;
-		}
-	}
-
-	for (int i = firstNum; s[i] >= 48 && s[i] <= 57; i++)
-	{
-		resp *= 10;
-		resp += (s[i] - 48);
-	}
-
-	return (sign * resp);
-}
-
-void int_to_string(int n)
-{
-int divisor = 1, i, resp;
-
-
-for (i = 0; n / divisor > 9; i++)
-{
-	divisor *= 10;
-}
-
-char str[i];
-
-for (int cmpt = 0; divisor >= 10; divisor /= 10, cmpt++)
-{
-	resp = n / divisor;
-	str[cmpt] = '0' + resp;
-	n = n - resp * divisor;
-}
-str[i] = ('0' + n);
-
-}
-
-
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-    int sum, a, b;
-    a = _atoi(n1);
-    b = _atoi(n2);
-
-    sum = a + b;
-
-
+	int len1 = 0, len2 = 0, lenS = 0;
+	
+	while (*(n1 + len1++))
+		;
+	while (*(n2 + len2++))
+		;
+	printf("%d, %d\n", len1, len2);
+	return (r);
 }
