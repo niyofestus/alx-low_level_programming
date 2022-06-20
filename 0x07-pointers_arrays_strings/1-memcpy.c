@@ -1,4 +1,4 @@
-#include "1-memcpy.c.h"
+#include "main.h"
 
 /**
  * _memcpy - irontnoux2
