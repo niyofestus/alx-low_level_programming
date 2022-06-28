@@ -1,11 +1,13 @@
+#include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
- * strtow - char
- * @str: pointer to string params
- * Return: char
+ * print_tab - Prints an array of string
+ * @tab: The array to print
+ *
+ * Return: nothing
  */
-
 char **strtow(char *str)
 {
 	int i = 0, j = 0, k = 0;
